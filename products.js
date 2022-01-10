@@ -22,7 +22,7 @@ const products = [
     },
   },
   {
-    id: "price_1JAEAjEy9j6mAC9e1jK4nxds",
+    id: "price_1JF2GMD0fPb5kZevISLSHek3",
     name: "Intro 17 Gen 1",
     price: 2995,
     currency: "USD",
@@ -44,7 +44,7 @@ const products = [
     },
   },
   {
-    id: "price_1JAEAjEy9j6mAC9e1jK4nxds",
+    id: "price_1JF2GMD0fPb5kZevISLSHek3",
     name: "Intro 17 Gen 2",
     price: 2995,
     currency: "USD",
