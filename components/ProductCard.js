@@ -76,7 +76,7 @@ const ProductCard = (props) => {
             type="button"
             onClick={handleOnAddToCart}
             disabled={adding || props.disabled}
-            className={`border rounded-lg py-1 px-4 hover:bg-rose-500 hover:border-rose-500 hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
+            className={`border rounded-lg py-1 px-4 hover:bg-green-700 hover:border-green-600 hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
               adding
                 ? "disabled:bg-rose-500 disabled:border-rose-500 disabled:text-white"
                 : "disabled:hover:bg-transparent disabled:hover:text-current disabled:hover:border-gray-200"
