@@ -4,7 +4,7 @@ const products = [
     name: "Tp Button",
     price: 3995,
     currency: "USD",
-    image: "/products/tp_button.png",
+    image: "/products/tp-button.png",
     rating: {
       count: 85,
       rate: 4.5,
