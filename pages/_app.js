@@ -1,8 +1,8 @@
-import 'tailwindcss/tailwind.css';
-import Head from 'next/head';
-import { CartProvider } from '@/hooks/use-shopping-cart';
-import { Header, Footer } from '@/components/index';
-import { Toaster } from 'react-hot-toast';
+import { Footer, Header } from "@/components/index";
+import { CartProvider } from "@/hooks/use-shopping-cart";
+import Head from "next/head";
+import { Toaster } from "react-hot-toast";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
