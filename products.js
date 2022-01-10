@@ -81,7 +81,7 @@ const products = [
     name: "Notes",
     price: 3995,
     currency: "USD",
-    image: "/prtoducts/notes.png",
+    image: "/products/notes.png",
     rating: {
       count: 78,
       rate: 4,
