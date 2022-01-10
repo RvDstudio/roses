@@ -26,7 +26,7 @@ const products = [
     name: "Intro 17 Gen 1",
     price: 2995,
     currency: "USD",
-    image: "/products/intro_17_gen1.png",
+    image: "/products/intro_17_gen_2.png",
     rating: {
       count: 104,
       rate: 4,
@@ -48,7 +48,7 @@ const products = [
     name: "Intro 17 Gen 2",
     price: 2995,
     currency: "USD",
-    image: "/products/intro_17_gen2.png",
+    image: "/products/intro_17_gen_2.png",
     rating: {
       count: 78,
       rate: 4,
@@ -70,7 +70,7 @@ const products = [
     name: "Notes 2",
     price: 2995,
     currency: "USD",
-    image: "/products/notes_3.png.png",
+    image: "/products/notes_3.png",
     rating: {
       count: 271,
       rate: 5,
