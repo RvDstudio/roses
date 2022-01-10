@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import Head from 'next/head';
-import { useShoppingCart } from '@/hooks/use-shopping-cart';
-import axios from 'axios';
-import { formatCurrency } from '@/lib/utils';
-import getStripe from '@/lib/get-stripe';
+import { useShoppingCart } from "@/hooks/use-shopping-cart";
+import getStripe from "@/lib/get-stripe";
+import { formatCurrency } from "@/lib/utils";
 import {
-  XCircleIcon,
-  XIcon,
   MinusSmIcon,
   PlusSmIcon,
-} from '@heroicons/react/outline';
+  XCircleIcon,
+  XIcon,
+} from "@heroicons/react/outline";
+import axios from "axios";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const Cart = () => {
   const { cartDetails, totalPrice, cartCount, addItem, removeItem, clearCart } =
@@ -22,7 +22,7 @@ const Cart = () => {
     // Create Stripe checkout
     const {
       data: { id },
-    } = await axios.post('/api/checkout_sessions', {
+    } = await axios.post("/api/checkout_sessions", {
       items: Object.entries(cartDetails).map(([_, { id, quantity }]) => ({
         price: id,
         quantity,
@@ -39,12 +39,12 @@ const Cart = () => {
       <Head>
         <title>My Shopping Cart | AlterClass</title>
       </Head>
-      <div className="container xl:max-w-screen-xl mx-auto py-12 px-6">
+      <div className="container xl:max-w-screen-xl mx-auto py-12 px-6 ">
         {cartCount > 0 ? (
           <>
             <h2 className="text-4xl font-semibold">Your shopping cart</h2>
             <p className="mt-1 text-xl">
-              {cartCount} items{' '}
+              {cartCount} items{" "}
               <button
                 onClick={clearCart}
                 className="opacity-50 hover:opacity-100 text-base capitalize"
@@ -59,7 +59,7 @@ const Cart = () => {
               Your shopping cart is empty.
             </h2>
             <p className="mt-1 text-xl">
-              Check out our awesome plants{' '}
+              Check out our awesome plants{" "}
               <Link href="/">
                 <a className="text-red-500 underline">here!</a>
               </Link>
@@ -72,7 +72,7 @@ const Cart = () => {
             {Object.entries(cartDetails).map(([key, product]) => (
               <div
                 key={key}
-                className="flex justify-between space-x-4 hover:shadow-lg hover:border-opacity-50 border border-opacity-0 rounded-md p-4"
+                className="flex justify-between space-x-4 shadow-lg border-opacity-50 border rounded-lg p-4 bg-white hover:bg-gray-50 hover:cursor-pointer mb-6"
               >
                 {/* Image + Name */}
                 <Link href={`/products/${product.id}`}>
@@ -130,7 +130,7 @@ const Cart = () => {
 
             <div className="flex flex-col items-end border-t py-4 mt-8">
               <p className="text-xl">
-                Total:{' '}
+                Total:{" "}
                 <span className="font-semibold">
                   {formatCurrency(totalPrice)}
                 </span>
@@ -141,7 +141,7 @@ const Cart = () => {
                 disabled={redirecting}
                 className="border rounded py-2 px-6 bg-rose-500 hover:bg-rose-600 border-rose-500 hover:border-rose-600 focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-rose-500 max-w-max mt-4"
               >
-                {redirecting ? 'Redirecting...' : 'Go to Checkout'}
+                {redirecting ? "Redirecting..." : "Go to Checkout"}
               </button>
             </div>
           </div>

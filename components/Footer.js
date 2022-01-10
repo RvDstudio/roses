@@ -1,4 +1,4 @@
-import { HeartIcon } from '@heroicons/react/solid';
+import { HeartIcon } from "@heroicons/react/solid";
 
 const Footer = () => (
   <footer className="container xl:max-w-screen-xl mx-auto p-6 mt-8 text-center">
@@ -9,9 +9,9 @@ const Footer = () => (
         rel="noopener noreferrer"
         className="text-gray-500 hover:text-current"
       >
-        Made with{' '}
-        <HeartIcon className="inline-block w-4 h-4 -mt-1 text-red-600 animate-pulse" />{' '}
-        by AlterClass.io
+        Made with{" "}
+        <HeartIcon className="inline-block w-4 h-4 -mt-1 text-green-600 animate-pulse" />{" "}
+        by RvDesignStudio
       </a>
     </p>
   </footer>
