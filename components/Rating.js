@@ -7,7 +7,7 @@ const Rating = ({ rate = 0, count = 0, max = 5 }) => {
   return (
     <div className="flex items-center -ml-1">
       {[...new Array(roundedRate)].map((_, i) => (
-        <StarIcon key={i} className="w-6 h-6 flex-shrink-0 text-yellow-400" />
+        <StarIcon key={i} className="w-6 h-6 flex-shrink-0 text-green-600" />
       ))}
       {[...new Array(max - roundedRate)].map((_, i) => (
         <EmptyStarIcon
