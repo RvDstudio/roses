@@ -37,7 +37,7 @@ const Cart = () => {
   return (
     <>
       <Head>
-        <title>My Shopping Cart | AlterClass</title>
+        <title>My Shopping Cart | RvDesignStudio</title>
       </Head>
       <div className="container xl:max-w-screen-xl mx-auto py-12 px-6 ">
         {cartCount > 0 ? (
@@ -68,7 +68,7 @@ const Cart = () => {
         )}
 
         {cartCount > 0 ? (
-          <div className="mt-12">
+          <div className="mt-12 container mx-auto">
             {Object.entries(cartDetails).map(([key, product]) => (
               <div
                 key={key}
