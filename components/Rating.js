@@ -1,5 +1,5 @@
-import { StarIcon as EmptyStarIcon } from '@heroicons/react/outline';
-import { StarIcon } from '@heroicons/react/solid';
+import { StarIcon as EmptyStarIcon } from "@heroicons/react/outline";
+import { StarIcon } from "@heroicons/react/solid";
 
 const Rating = ({ rate = 0, count = 0, max = 5 }) => {
   const roundedRate = Math.round(rate);
@@ -12,7 +12,7 @@ const Rating = ({ rate = 0, count = 0, max = 5 }) => {
       {[...new Array(max - roundedRate)].map((_, i) => (
         <EmptyStarIcon
           key={i}
-          className="w-5 h-5 flex-shrink-0 text-yellow-400"
+          className="w-5 h-5 flex-shrink-0 text-green-600"
         />
       ))}
       <span className="ml-2 text-gray-500">({count})</span>
