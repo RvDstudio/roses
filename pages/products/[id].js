@@ -48,7 +48,7 @@ const Product = (props) => {
   ) : (
     <>
       <Head>
-        <title>{props.name} | AlterClass</title>
+        <title>{props.name} | RvDesignStudio</title>
       </Head>
       <div className="container lg:max-w-screen-lg mx-auto py-12 px-6">
         <div className="bg-white border border-opacity-50 rounded-md shadow-lg p-6">
