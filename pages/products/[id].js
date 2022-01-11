@@ -65,11 +65,16 @@ const Product = (props) => {
 
             {/* Product's details */}
             <div className="flex-1 max-w-md border border-opacity-50 rounded-md shadow-lg p-6">
-              <h2 className="text-3xl font-semibold">{props.name}</h2>
+              <h2 className="text-3xl text-green-600 font-semibold mb-4">
+                {props.name}
+              </h2>
               <p>
                 <span className="text-gray-500">Availability:</span>{" "}
                 <span className="font-semibold">In stock</span>
               </p>
+              <br />
+
+              <p>{props.desc}</p>
 
               {/* Price */}
               <div className="mt-8 border-t pt-4">
@@ -104,7 +109,7 @@ const Product = (props) => {
                   type="button"
                   onClick={handleOnAddToCart}
                   disabled={adding}
-                  className="mt-8 border rounded py-2 px-6 bg-rose-500 hover:bg-rose-600 border-rose-500 hover:border-rose-600 focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="mt-8 border rounded py-2 px-6 bg-green-600 hover:bg-green-700 border-green-500 hover:border-green-700 focus:ring-4 focus:ring-opacity-50 focus:ring-green-800 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Add to cart ({qty})
                 </button>

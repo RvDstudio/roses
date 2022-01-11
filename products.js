@@ -4,6 +4,7 @@ const products = [
     name: "Tp Button",
     price: 3995,
     currency: "USD",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
     image: "/products/tp-button.png",
     rating: {
       count: 85,
@@ -15,6 +16,7 @@ const products = [
     name: "Tp Touch",
     price: 5995,
     currency: "USD",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
     image: "/products/tp_touch.png",
     rating: {
       count: 137,
@@ -26,6 +28,7 @@ const products = [
     name: "Intro 17 Gen 1",
     price: 2995,
     currency: "USD",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
     image: "/products/intro_17_gen_2.png",
     rating: {
       count: 104,
@@ -37,6 +40,7 @@ const products = [
     name: "Intro 8",
     price: 4995,
     currency: "USD",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
     image: "/products/intro_8.png",
     rating: {
       count: 213,
@@ -48,6 +52,7 @@ const products = [
     name: "Intro 17 Gen 2",
     price: 2995,
     currency: "USD",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
     image: "/products/intro_17_gen_2.png",
     rating: {
       count: 78,
@@ -59,6 +64,7 @@ const products = [
     name: "Intro 5",
     price: 2995,
     currency: "USD",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
     image: "/products/intro_5.png",
     rating: {
       count: 89,
@@ -70,6 +76,7 @@ const products = [
     name: "Notes 2",
     price: 2995,
     currency: "USD",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
     image: "/products/notes_3.png",
     rating: {
       count: 271,
@@ -81,6 +88,7 @@ const products = [
     name: "Notes",
     price: 3995,
     currency: "USD",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
     image: "/products/notes.png",
     rating: {
       count: 78,
