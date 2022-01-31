@@ -12,13 +12,13 @@ const Header = () => {
   const { cartCount } = useShoppingCart();
   return (
     <>
-      <header className="sticky top-0 z-50 mb-6 border-b-2 border-gray-100 bg-white">
+      <header className="sticky top-0 z-50 border-b-2 border-gray-100 bg-white">
         <div className="flex items-center justify-between  px-4  flex-grow py-4">
           <div className="mt-2 flex items-center mr-4 text-[#002c4c]">
             <Link href="/">
               <p className="text-2xl md:text-3xl items-center font-semibold ml-2">
-                <span className="">Qmatic</span>
-                <span className="text-green-600 font-normal py-2">|Store</span>
+                <span className="">Rhyno</span>
+                <span className="text-red-600 font-normal py-2">|Store</span>
               </p>
             </Link>
           </div>
@@ -29,7 +29,7 @@ const Header = () => {
               type="text"
               placeholder="Start your search"
             />
-            <SearchIcon className="hidden md:inline-flex h-8 text-white bg-green-600 rounded-lg p-2 cursor-pointer md:mx-2" />
+            <SearchIcon className="hidden md:inline-flex h-8 text-white bg-red-600 rounded-lg p-2 cursor-pointer md:mx-2" />
           </div>
 
           {/* Bottom Nav */}
@@ -42,27 +42,27 @@ const Header = () => {
             <p className="link cursor-pointer hidden lg:inline-flex">Contact</p>
           </div>
           <div className="relative z-1">
-            <IconButton aria-label="User" className="hover:text-green-600">
+            <IconButton aria-label="User" className="hover:text-red-600">
               <PermIdentityIcon
                 aria-label="User"
-                className="h-5 w-5 text-gray-700 hover:text-green-600"
+                className="h-5 w-5 text-gray-700 hover:text-red-600"
               />
             </IconButton>
-            <IconButton aria-label="Settings" className="hover:text-green-600">
-              <SettingsIcon className="h-5 w-5 text-gray-700 hover:text-green-600" />
+            <IconButton aria-label="Settings" className="hover:text-red-600">
+              <SettingsIcon className="h-5 w-5 text-gray-700 hover:text-red-600" />
             </IconButton>
             <IconButton
               aria-label="Nav"
-              className="md:hidden hover:text-green-600"
+              className="md:hidden hover:text-red-600"
             >
-              <MenuIcon className="h-5 w-5 text-gray-700 hover:text-green-600" />
+              <MenuIcon className="h-5 w-5 text-gray-700 hover:text-red-600" />
             </IconButton>
             <IconButton>
               <Link href="/cart">
-                <a className=" space-x-1 text-green-600 hover:text-green-600">
+                <a className=" space-x-1 text-red-600 hover:text-red-600">
                   <div className="relative">
                     <p className=" text-lg">
-                      <span className="z-20 absolute bottom-0 left-4 text-sm text-red-600 rounded-full p-2">
+                      <span className="z-20 absolute bottom-0 left-4 text-sm text-green-600 rounded-full p-2">
                         ({cartCount})
                       </span>
                     </p>

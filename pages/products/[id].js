@@ -111,7 +111,7 @@ const Product = (props) => {
                   disabled={adding}
                   className="mt-8 border rounded py-2 px-6 bg-green-600 hover:bg-green-700 border-green-500 hover:border-green-700 focus:ring-4 focus:ring-opacity-50 focus:ring-green-800 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Add to cart ({qty})
+                  Plaats in winkelwagen ({qty})
                 </button>
               </div>
             </div>

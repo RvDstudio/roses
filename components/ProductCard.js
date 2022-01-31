@@ -66,7 +66,7 @@ const ProductCard = (props) => {
         {/* Price + CTA */}
         <div className="mt-4 flex items-center justify-between space-x-2">
           <div>
-            <p className="text-gray-500">Price</p>
+            <p className="text-gray-500">Prijs</p>
             <p className="text-lg font-semibold">
               {formatCurrency(props.price, props.currency)}
             </p>
@@ -76,13 +76,13 @@ const ProductCard = (props) => {
             type="button"
             onClick={handleOnAddToCart}
             disabled={adding || props.disabled}
-            className={`border rounded-lg py-1 px-4 hover:bg-green-700 hover:border-green-600 hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
+            className={`border rounded-lg py-1 px-4 group-hover:bg-red-700 hover:bg-red-700 group-hover:border-red-600 group-hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
               adding
                 ? "disabled:bg-rose-500 disabled:border-rose-500 disabled:text-white"
                 : "disabled:hover:bg-transparent disabled:hover:text-current disabled:hover:border-gray-200"
             }`}
           >
-            {adding ? "Adding..." : "Add to cart"}
+            {adding ? "Adding..." : "In winkelwagen"}
           </button>
         </div>
       </a>
