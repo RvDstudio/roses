@@ -1,6 +1,6 @@
 const products = [
   {
-    id: "price_1KO3GbC5VviC1HVxrjhwaCPA",
+    id: "price_1KOTdVAMeFdQleuJX8wEgDHf",
     name: "Rode Rozen 10 stuks",
     price: 1995,
     currency: "EUR",
@@ -12,7 +12,7 @@ const products = [
     },
   },
   {
-    id: "price_1KO3HoC5VviC1HVxUO7n8vp4",
+    id: "price_1KOTeIAMeFdQleuJunIcZWmf",
     name: "Rode Rozen 20 stuks",
     price: 2995,
     currency: "EUR",
@@ -24,7 +24,7 @@ const products = [
     },
   },
   {
-    id: "price_1KO3KXC5VviC1HVxiXjlqiDo",
+    id: "price_1KOTf3AMeFdQleuJfVg1xhkK",
     name: "Rode Rozen 25 stuks",
     price: 3495,
     currency: "EUR",
@@ -36,7 +36,7 @@ const products = [
     },
   },
   {
-    id: "price_1JF2CbD0fPb5kZevbeReprKJ",
+    id: "price_1KOTfoAMeFdQleuJgpkBgCWb",
     name: "Rode Rozen 30 stuks",
     price: 3995,
     currency: "EUR",

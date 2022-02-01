@@ -17,8 +17,8 @@ const Header = () => {
           <div className="mt-2 flex items-center mr-4 text-[#002c4c]">
             <Link href="/">
               <p className="text-2xl md:text-3xl items-center font-semibold ml-2">
-                <span className="">Rhyno</span>
-                <span className="text-red-600 font-normal py-2">|Store</span>
+                <span className="">Fast</span>
+                <span className="text-red-600 font-normal py-2">|Flower</span>
               </p>
             </Link>
           </div>
