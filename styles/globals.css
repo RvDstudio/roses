@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #f5f5f5;
+  background-color: #080e3b;
+}
+.frosa {
+  font-family: "Rosarivo", serif;
 }

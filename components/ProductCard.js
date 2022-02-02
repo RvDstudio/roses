@@ -46,7 +46,7 @@ const ProductCard = (props) => {
 
   return (
     <Link href={`/products/${props.id}`}>
-      <a className="border rounded-xl p-6 group bg-white">
+      <a className="border border-[#162174] rounded-xl p-6 group bg-[#080E3B]">
         {/* Product's image */}
         <div className="relative w-full h-64 group-hover:transform group-hover:scale-125 group-hover:ease-in-out group-hover:duration-500">
           <Image
@@ -58,7 +58,7 @@ const ProductCard = (props) => {
         </div>
 
         {/* Name + Rating */}
-        <div className="mt-4 sm:mt-8">
+        <div className="mt-4 sm:mt-8 text-[#AC842C]">
           <p className="font-semibold text-lg capitalize">{props.name}</p>
           <Rating rate={props?.rating?.rate} count={props?.rating?.count} />
         </div>
@@ -66,8 +66,8 @@ const ProductCard = (props) => {
         {/* Price + CTA */}
         <div className="mt-4 flex items-center justify-between space-x-2">
           <div>
-            <p className="text-gray-500">Prijs</p>
-            <p className="text-lg font-semibold">
+            <p className="text-[#AC842C]">Prijs</p>
+            <p className="text-lg font-semibold text-[#AC842C]">
               {formatCurrency(props.price, props.currency)}
             </p>
           </div>
@@ -76,9 +76,9 @@ const ProductCard = (props) => {
             type="button"
             onClick={handleOnAddToCart}
             disabled={adding || props.disabled}
-            className={`border rounded-lg py-1 px-4 group-hover:bg-red-700 hover:bg-red-700 group-hover:border-red-600 group-hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
+            className={`border border-[#AC842C] text-[#AC842C] rounded-lg py-1 px-4 group-hover:bg-[#AC842C] hover:bg-[#AC842C] group-hover:border-[#AC842C] group-hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
               adding
-                ? "disabled:bg-rose-500 disabled:border-rose-500 disabled:text-white"
+                ? "disabled:bg-rose-500 disabled:border-rose-500 disabled:text-[#AC842C]"
                 : "disabled:hover:bg-transparent disabled:hover:text-current disabled:hover:border-gray-200"
             }`}
           >
