@@ -64,26 +64,28 @@ const ProductCard = (props) => {
         </div>
 
         {/* Price + CTA */}
-        <div className="mt-4 flex items-center justify-between space-x-2">
-          <div>
-            <p className="text-[#AC842C]">Prijs</p>
-            <p className="text-lg font-semibold text-[#AC842C]">
-              {formatCurrency(props.price, props.currency)}
-            </p>
-          </div>
+        <div className="flex flex-cols">
+          <div className="mt-4 space-x-2">
+            <div className="flex">
+              <p className="text-[#AC842C] mr-2">Prijs</p>
+              <p className="text-lg font-semibold text-[#AC842C]">
+                {formatCurrency(props.price, props.currency)}
+              </p>
+            </div>
 
-          <button
-            type="button"
-            onClick={handleOnAddToCart}
-            disabled={adding || props.disabled}
-            className={`border border-[#AC842C] text-[#AC842C] rounded-lg py-1 px-4 group-hover:bg-[#AC842C] hover:bg-[#AC842C] group-hover:border-[#AC842C] group-hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
-              adding
-                ? "disabled:bg-rose-500 disabled:border-rose-500 disabled:text-[#AC842C]"
-                : "disabled:hover:bg-transparent disabled:hover:text-current disabled:hover:border-gray-200"
-            }`}
-          >
-            {adding ? "Adding..." : "In winkelwagen"}
-          </button>
+            <button
+              type="button"
+              onClick={handleOnAddToCart}
+              disabled={adding || props.disabled}
+              className={`mt-4 w-full border border-[#AC842C] text-[#AC842C] rounded-lg py-1 px-4 group-hover:bg-[#AC842C] hover:bg-[#AC842C] group-hover:border-[#AC842C] group-hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
+                adding
+                  ? "disabled:bg-rose-500 disabled:border-rose-500 disabled:text-[#AC842C]"
+                  : "disabled:hover:bg-transparent disabled:hover:text-current disabled:hover:border-gray-200"
+              }`}
+            >
+              {adding ? "Adding..." : "In winkelwagen"}
+            </button>
+          </div>
         </div>
       </a>
     </Link>

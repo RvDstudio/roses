@@ -37,13 +37,15 @@ const Cart = () => {
   return (
     <>
       <Head>
-        <title>My Shopping Cart | RvDesignStudio</title>
+        <title>My Winkelwagen</title>
       </Head>
-      <div className="container xl:max-w-screen-xl mx-auto py-12 px-6 ">
+      <div className="container xl:max-w-screen-xl mx-auto py-12 px-6">
         {cartCount > 0 ? (
           <>
-            <h2 className="text-4xl font-semibold">Mijn Winkelwagen</h2>
-            <p className="mt-1 text-xl">
+            <h2 className="text-4xl text-[#AC842C] font-semibold">
+              Mijn Winkelwagen
+            </h2>
+            <p className="mt-1 text-xl text-[#AC842C]">
               {cartCount} items{" "}
               <button
                 onClick={clearCart}
@@ -55,28 +57,28 @@ const Cart = () => {
           </>
         ) : (
           <>
-            <h2 className="text-4xl font-semibold">
+            <h2 className="text-4xl font-semibold text-[#AC842C]">
               Je winkel wagen is nog leeg.
             </h2>
-            <p className="mt-1 text-xl">
+            <p className="mt-1 text-xl text-[#AC842C]">
               Neem een kijkje in de winkel{" "}
               <Link href="/">
-                <a className="text-red-500 underline">naar de winkel!</a>
+                <a className="text-[#AC842C] underline">naar de winkel!</a>
               </Link>
             </p>
           </>
         )}
 
         {cartCount > 0 ? (
-          <div className="mt-12 container mx-auto">
+          <div className="mt-12 container mx-auto text-[#AC842C]">
             {Object.entries(cartDetails).map(([key, product]) => (
               <div
                 key={key}
-                className="flex justify-between space-x-4 shadow-lg border-opacity-50 border rounded-lg p-4 bg-white hover:bg-gray-50 hover:cursor-pointer mb-6"
+                className="flex justify-between space-x-4 shadow-lg border-opacity-50 border border-[#162174] rounded-lg p-4 bg-[#050A30] hover:bg-[#c79833] hover:cursor-pointer mb-6"
               >
                 {/* Image + Name */}
                 <Link href={`/products/${product.id}`}>
-                  <a className="flex items-center space-x-4 group">
+                  <a className="flex items-center space-x-4 group text-[#AC842C]">
                     <div className="relative w-20 h-20 group-hover:scale-110 transition-transform">
                       <Image
                         src={product.image}
@@ -105,7 +107,7 @@ const Cart = () => {
                     <p className="font-semibold text-xl">{product.quantity}</p>
                     <button
                       onClick={() => addItem(product)}
-                      className="hover:bg-green-100 hover:text-green-500 rounded-md p-1"
+                      className="hover:bg-[#AC842C] hover:text-green-500 rounded-md p-1"
                     >
                       <PlusSmIcon className="w-6 h-6 flex-shrink-0 " />
                     </button>
@@ -139,7 +141,7 @@ const Cart = () => {
               <button
                 onClick={redirectToCheckout}
                 disabled={redirecting}
-                className="border rounded py-2 px-6 bg-rose-500 hover:bg-rose-600 border-rose-500 hover:border-rose-600 focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-rose-500 max-w-max mt-4"
+                className="border rounded py-2 px-6 bg-[#AC842C] hover:bg-[#c49633] border-[#AC842C] hover:border-[#c29533] focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-rose-500 max-w-max mt-4"
               >
                 {redirecting ? "Redirecting..." : "Betalen"}
               </button>

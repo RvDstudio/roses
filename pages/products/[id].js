@@ -48,10 +48,10 @@ const Product = (props) => {
   ) : (
     <>
       <Head>
-        <title>{props.name} | RvDesignStudio</title>
+        <title>{props.name}</title>
       </Head>
       <div className="container lg:max-w-screen-lg mx-auto py-12 px-6">
-        <div className="bg-white border border-opacity-50 rounded-md shadow-lg p-6">
+        <div className="bg-[#050A30] border border-[#162174] border-opacity-50 rounded-md shadow-lg p-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-12">
             {/* Product's image */}
             <div className="relative w-72 h-72 sm:w-96 sm:h-96">
@@ -64,11 +64,11 @@ const Product = (props) => {
             </div>
 
             {/* Product's details */}
-            <div className="flex-1 max-w-md border border-opacity-50 rounded-md shadow-lg p-6">
-              <h2 className="text-3xl text-green-600 font-semibold mb-4">
+            <div className="flex-1 max-w-md border border-[#162174]  bg-[#080E3B] border-opacity-50 rounded-md shadow-lg p-6 text-gray-500">
+              <h2 className="text-3xl text-[#AC842C] font-semibold mb-4">
                 {props.name}
               </h2>
-              <p>
+              <p className="text-[#AC842C]">
                 <span className="text-gray-500">Availability:</span>{" "}
                 <span className="font-semibold">In stock</span>
               </p>
@@ -77,14 +77,14 @@ const Product = (props) => {
               <p>{props.desc}</p>
 
               {/* Price */}
-              <div className="mt-8 border-t pt-4">
+              <div className="mt-8 border-t  border-[#AC842C] pt-4 text-[#AC842C]">
                 <p className="text-gray-500">Price:</p>
                 <p className="text-xl font-semibold">
                   {formatCurrency(props.price)}
                 </p>
               </div>
 
-              <div className="mt-4 border-t pt-4">
+              <div className="mt-4 border-t border-[#AC842C] pt-4 text-[#AC842C]">
                 {/* Quantity */}
                 <p className="text-gray-500">Quantity:</p>
                 <div className="mt-1 flex items-center space-x-3">
@@ -98,7 +98,7 @@ const Product = (props) => {
                   <p className="font-semibold text-xl">{qty}</p>
                   <button
                     onClick={() => setQty((prev) => prev + 1)}
-                    className="hover:bg-green-100 hover:text-green-500 rounded-md p-1"
+                    className="hover:bg-[#AC842C] hover:text-white rounded-md p-1"
                   >
                     <PlusSmIcon className="w-6 h-6 flex-shrink-0 " />
                   </button>
@@ -109,7 +109,7 @@ const Product = (props) => {
                   type="button"
                   onClick={handleOnAddToCart}
                   disabled={adding}
-                  className="mt-8 border rounded py-2 px-6 bg-green-600 hover:bg-green-700 border-green-500 hover:border-green-700 focus:ring-4 focus:ring-opacity-50 focus:ring-green-800 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="mt-8 border rounded py-2 px-6 bg-[#AC842C] hover:bg-[#AC842C] border-[#AC842C] hover:border-green-700 focus:ring-4 focus:ring-opacity-50 focus:ring-green-800 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Plaats in winkelwagen ({qty})
                 </button>

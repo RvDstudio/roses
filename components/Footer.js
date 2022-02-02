@@ -10,7 +10,7 @@ const Footer = () => (
         className="text-gray-500 hover:text-current"
       >
         Made with{" "}
-        <HeartIcon className="inline-block w-4 h-4 -mt-1 text-green-600 animate-pulse" />{" "}
+        <HeartIcon className="inline-block w-4 h-4 -mt-1 text-[#AC842C] animate-pulse" />{" "}
         by RvDesignStudio
       </a>
     </p>
