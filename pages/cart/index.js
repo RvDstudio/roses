@@ -42,10 +42,10 @@ const Cart = () => {
       <div className="container xl:max-w-screen-xl mx-auto py-12 px-6">
         {cartCount > 0 ? (
           <>
-            <h2 className="text-4xl text-[#AC842C] font-semibold">
+            <h2 className="text-4xl text-[#cfaa6c] font-semibold">
               Mijn Winkelwagen
             </h2>
-            <p className="mt-1 text-xl text-[#AC842C]">
+            <p className="mt-1 text-xl text-[#cfaa6c]">
               {cartCount} items{" "}
               <button
                 onClick={clearCart}
@@ -57,28 +57,28 @@ const Cart = () => {
           </>
         ) : (
           <>
-            <h2 className="text-4xl font-semibold text-[#AC842C]">
+            <h2 className="text-4xl font-semibold text-[#cfaa6c]">
               Je winkel wagen is nog leeg.
             </h2>
-            <p className="mt-1 text-xl text-[#AC842C]">
+            <p className="mt-1 text-xl text-[#cfaa6c]">
               Neem een kijkje in de winkel{" "}
               <Link href="/">
-                <a className="text-[#AC842C] underline">naar de winkel!</a>
+                <a className="text-[#cfaa6c] underline">naar de winkel!</a>
               </Link>
             </p>
           </>
         )}
 
         {cartCount > 0 ? (
-          <div className="mt-12 container mx-auto text-[#AC842C]">
+          <div className="mt-12 container mx-auto text-[#cfaa6c] group">
             {Object.entries(cartDetails).map(([key, product]) => (
               <div
                 key={key}
-                className="flex justify-between space-x-4 shadow-lg border-opacity-50 border border-[#162174] rounded-lg p-4 bg-[#050A30] hover:bg-[#c79833] hover:cursor-pointer mb-6"
+                className="flex justify-between space-x-4 shadow-lg border-opacity-50 border border-[#162174] rounded-lg p-4 bg-[#050A30] hover:bg-[#cfaa6c] group-hover:text-gray-700 hover:cursor-pointer mb-6"
               >
                 {/* Image + Name */}
                 <Link href={`/products/${product.id}`}>
-                  <a className="flex items-center space-x-4 group text-[#AC842C]">
+                  <a className="flex items-center space-x-4 group text-[#cfaa6c]">
                     <div className="relative w-20 h-20 group-hover:scale-110 transition-transform">
                       <Image
                         src={product.image}
@@ -87,7 +87,7 @@ const Cart = () => {
                         objectFit="contain"
                       />
                     </div>
-                    <p className="font-semibold text-xl group-hover:underline">
+                    <p className="font-semibold text-xl group-hover:text-gray-700">
                       {product.name}
                     </p>
                   </a>
@@ -107,7 +107,7 @@ const Cart = () => {
                     <p className="font-semibold text-xl">{product.quantity}</p>
                     <button
                       onClick={() => addItem(product)}
-                      className="hover:bg-[#AC842C] hover:text-green-500 rounded-md p-1"
+                      className="hover:bg-[#cfaa6c] hover:text-green-500 rounded-md p-1"
                     >
                       <PlusSmIcon className="w-6 h-6 flex-shrink-0 " />
                     </button>
@@ -124,13 +124,13 @@ const Cart = () => {
                     onClick={() => removeItem(product, product.quantity)}
                     className="ml-4 hover:text-rose-500"
                   >
-                    <XCircleIcon className="w-6 h-6 flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity" />
+                    <XCircleIcon className="w-6 h-6 flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" />
                   </button>
                 </div>
               </div>
             ))}
 
-            <div className="flex flex-col items-end border-t py-4 mt-8">
+            <div className="flex flex-col items-end border-t border-[#cfaa6c] py-4 mt-8">
               <p className="text-xl">
                 Totaal:{" "}
                 <span className="font-semibold">
@@ -141,7 +141,7 @@ const Cart = () => {
               <button
                 onClick={redirectToCheckout}
                 disabled={redirecting}
-                className="border rounded py-2 px-6 bg-[#AC842C] hover:bg-[#c49633] border-[#AC842C] hover:border-[#c29533] focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-rose-500 max-w-max mt-4"
+                className="border rounded py-2 px-6 bg-[#cfaa6c] hover:bg-[#dbb572] border-[#cfaa6c] hover:border-[#c29533] focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-rose-500 max-w-max mt-4"
               >
                 {redirecting ? "Redirecting..." : "Betalen"}
               </button>

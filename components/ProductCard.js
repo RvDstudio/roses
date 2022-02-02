@@ -58,7 +58,7 @@ const ProductCard = (props) => {
         </div>
 
         {/* Name + Rating */}
-        <div className="mt-4 sm:mt-8 text-[#AC842C]">
+        <div className="mt-4 sm:mt-8 text-[#cfaa6c]">
           <p className="font-semibold text-lg capitalize">{props.name}</p>
           <Rating rate={props?.rating?.rate} count={props?.rating?.count} />
         </div>
@@ -67,8 +67,8 @@ const ProductCard = (props) => {
         <div className="flex flex-cols">
           <div className="mt-4 space-x-2">
             <div className="flex">
-              <p className="text-[#AC842C] mr-2">Prijs</p>
-              <p className="text-lg font-semibold text-[#AC842C]">
+              <p className="text-[#cfaa6c] mr-2">Prijs</p>
+              <p className="text-lg font-semibold text-[#cfaa6c]">
                 {formatCurrency(props.price, props.currency)}
               </p>
             </div>
@@ -77,7 +77,7 @@ const ProductCard = (props) => {
               type="button"
               onClick={handleOnAddToCart}
               disabled={adding || props.disabled}
-              className={`mt-4 w-full border border-[#AC842C] text-[#AC842C] rounded-lg py-1 px-4 group-hover:bg-[#AC842C] hover:bg-[#AC842C] group-hover:border-[#AC842C] group-hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
+              className={`mt-4 w-full border border-[#cfaa6c] text-[#cfaa6c] rounded-lg py-1 px-4 group-hover:bg-[#cfaa6c] hover:bg-[#cfaa6c] group-hover:border-[#cfaa6c] group-hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
                 adding
                   ? "disabled:bg-rose-500 disabled:border-rose-500 disabled:text-[#AC842C]"
                   : "disabled:hover:bg-transparent disabled:hover:text-current disabled:hover:border-gray-200"

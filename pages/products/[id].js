@@ -65,10 +65,10 @@ const Product = (props) => {
 
             {/* Product's details */}
             <div className="flex-1 max-w-md border border-[#162174]  bg-[#080E3B] border-opacity-50 rounded-md shadow-lg p-6 text-gray-500">
-              <h2 className="text-3xl text-[#AC842C] font-semibold mb-4">
+              <h2 className="text-3xl text-[#cfaa6c] font-semibold mb-4">
                 {props.name}
               </h2>
-              <p className="text-[#AC842C]">
+              <p className="text-[#cfaa6c]">
                 <span className="text-gray-500">Availability:</span>{" "}
                 <span className="font-semibold">In stock</span>
               </p>
@@ -77,16 +77,16 @@ const Product = (props) => {
               <p>{props.desc}</p>
 
               {/* Price */}
-              <div className="mt-8 border-t  border-[#AC842C] pt-4 text-[#AC842C]">
-                <p className="text-gray-500">Price:</p>
+              <div className="mt-8 border-t  border-[#cfaa6c] pt-4 text-[#AC842C]">
+                <p className="text-gray-500">Prijs:</p>
                 <p className="text-xl font-semibold">
                   {formatCurrency(props.price)}
                 </p>
               </div>
 
-              <div className="mt-4 border-t border-[#AC842C] pt-4 text-[#AC842C]">
+              <div className="mt-4 border-t border-[#cfaa6c] pt-4 text-[#cfaa6c]">
                 {/* Quantity */}
-                <p className="text-gray-500">Quantity:</p>
+                <p className="text-gray-500">Aantal:</p>
                 <div className="mt-1 flex items-center space-x-3">
                   <button
                     onClick={() => setQty((prev) => prev - 1)}
@@ -98,7 +98,7 @@ const Product = (props) => {
                   <p className="font-semibold text-xl">{qty}</p>
                   <button
                     onClick={() => setQty((prev) => prev + 1)}
-                    className="hover:bg-[#AC842C] hover:text-white rounded-md p-1"
+                    className="hover:bg-[#cfaa6c] hover:text-white rounded-md p-1"
                   >
                     <PlusSmIcon className="w-6 h-6 flex-shrink-0 " />
                   </button>
@@ -109,7 +109,7 @@ const Product = (props) => {
                   type="button"
                   onClick={handleOnAddToCart}
                   disabled={adding}
-                  className="mt-8 border rounded py-2 px-6 bg-[#AC842C] hover:bg-[#AC842C] border-[#AC842C] hover:border-green-700 focus:ring-4 focus:ring-opacity-50 focus:ring-green-800 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="mt-8 border rounded py-2 px-6 bg-[#cfaa6c] hover:bg-[#cfaa6c] border-[#cfaa6c] hover:border-green-700 focus:ring-4 focus:ring-opacity-50 focus:ring-green-800 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Plaats in winkelwagen ({qty})
                 </button>
