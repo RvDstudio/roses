@@ -8,10 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>
-          E-commerce store built with Next.js and Stripe checkout |
-          RvDesignStudio
-        </title>
+        <title>Fastflower | voor al uw rozen</title>
         <meta
           name="description"
           content="E-commerce store built with Next.js and Stripe checkout by RvDesignStudio"
