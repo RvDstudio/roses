@@ -51,7 +51,7 @@ const Product = (props) => {
         <title>{props.name}</title>
       </Head>
       <div className="container lg:max-w-screen-lg mx-auto py-12 px-6">
-        <div className="bg-[#050A30] border border-[#162174] border-opacity-50 rounded-md shadow-lg p-6">
+        <div className="bg-[#15162D] border border-[#162174] border-opacity-50 rounded-md shadow-lg p-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-12">
             {/* Product's image */}
             <div className="relative w-72 h-72 sm:w-96 sm:h-96">
@@ -64,7 +64,7 @@ const Product = (props) => {
             </div>
 
             {/* Product's details */}
-            <div className="flex-1 max-w-md border border-[#162174]  bg-[#080E3B] border-opacity-50 rounded-md shadow-lg p-6 text-gray-500">
+            <div className="flex-1 max-w-md border border-[#162174]  bg-[#1a1b36] border-opacity-50 rounded-md shadow-lg p-6 text-gray-500">
               <h2 className="text-3xl text-[#cfaa6c] font-semibold mb-4">
                 {props.name}
               </h2>

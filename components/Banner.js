@@ -6,17 +6,12 @@ function Banner() {
           <h1 className="frosa xs:text-3xl text-5xl mb-4 font-medium text-[#cfaa6c]">
             Welkom bij Fast Flower
           </h1>
-          <p className="mb-8 leading-relaxed">
+          <p className="mb-8 text-[20px] leading-relaxed">
             Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
             plant cold-pressed tacos poke beard tote bag. Heirloom echo park
             mlkshk tote bag selvage hot chicken authentic tumeric truffaut
             hexagon try-hard chambray.
           </p>
-          <div className="flex justify-center">
-            <button className="inline-flex text-white bg-[#cfaa6c] border-0 py-1 px-3 focus:outline-none hover:bg-[#c79935] rounded text-lg">
-              Naar de winkel
-            </button>
-          </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
