@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import { ProductCard } from "@/components/index";
+import Testimonials from "@/components/Testimonals";
 import products from "products";
 import { useState } from "react";
 
@@ -25,6 +26,12 @@ export default function Home() {
               />
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className="bg-[#1A1B36]">
+        <div className="container xl:max-w-screen-xl mx-auto py-12 px-6">
+          <Testimonials />
         </div>
       </div>
     </>

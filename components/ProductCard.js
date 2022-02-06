@@ -1,4 +1,3 @@
-import { Rating } from "@/components/index";
 import { useShoppingCart } from "@/hooks/use-shopping-cart";
 import { formatCurrency } from "@/lib/utils";
 import Image from "next/image";
