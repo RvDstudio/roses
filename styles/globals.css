@@ -76,7 +76,7 @@ body {
 .myCarousel p:before {
   content: "“";
   color: #aaa;
-  font-size: 26px;
+  font-size: 56px;
   font-family: monospace;
   font-weight: 100;
 }
@@ -84,7 +84,7 @@ body {
 .myCarousel p:after {
   content: "”";
   color: #aaa;
-  font-size: 26px;
+  font-size: 56px;
   font-family: monospace;
   font-weight: 100;
   line-height: 0;
