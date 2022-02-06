@@ -6,7 +6,7 @@ const people = [
     name: "maria ferguson",
     title: "office manager",
     quote:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
+      "De bloemen die ik had besteld bij FastFlower werden netjes volgens de afspraak geleverd.",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const people = [
     name: "john doe",
     title: "regular guy",
     quote:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.",
+      "De bloemen die ik had besteld bij FastFlower werden netjes volgens de afspraak geleverd.",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const people = [
     name: "peter smith",
     title: "product designer",
     quote:
-      "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
+      "De bloemen die ik had besteld bij FastFlower werden netjes volgens de afspraak geleverd.",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const people = [
     name: "susan andersen",
     title: "the boss",
     quote:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+      "De bloemen die ik had besteld bij FastFlower werden netjes volgens de afspraak geleverd.",
   },
 ];
 

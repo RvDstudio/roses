@@ -20,10 +20,7 @@ export default class Testimonials extends Component {
               <img alt="user" className="mb-4" src="/img/user.png" />
               <div className="myCarousel">
                 <h3>{e.name}</h3>
-                <p>
-                  De bloemen die ik had besteld bij FastFlower werden netjes
-                  volgens de afspraak geleverd.
-                </p>
+                <p>{e.quote}</p>
               </div>
             </div>
           );

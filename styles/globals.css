@@ -34,8 +34,8 @@ body {
   padding-top: 6%;
   padding-bottom: 8%;
   padding-left: 5%;
+  border: none !important;
   padding-right: 5%;
-
   height: 286px;
 }
 
@@ -110,7 +110,7 @@ body {
 @media only screen and (max-width: 934px) {
   .carousel-root {
     outline: 0;
-    width: 93% !important;
+    width: 40% !important;
     margin: auto !important;
   }
 
