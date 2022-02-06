@@ -9,10 +9,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Fastflower | voor al uw rozen</title>
-        <meta
-          name="description"
-          content="E-commerce store built with Next.js and Stripe checkout by RvDesignStudio"
-        />
+        <meta name="description" content="FastFlower | voor al uw rozen" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link

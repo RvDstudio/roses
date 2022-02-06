@@ -68,10 +68,6 @@ const Product = (props) => {
               <h2 className="text-3xl text-[#cfaa6c] font-semibold mb-4">
                 {props.name}
               </h2>
-              <p className="text-[#cfaa6c]">
-                <span className="text-gray-500">Availability:</span>{" "}
-                <span className="font-semibold">In stock</span>
-              </p>
               <br />
 
               <p>{props.desc}</p>
