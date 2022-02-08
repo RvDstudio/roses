@@ -1,6 +1,6 @@
 const products = [
   {
-    id: "price_1KPbFjAMeFdQleuJCiqf7vc3",
+    id: "price_1KPbDIAMeFdQleuJFq8Fw6ow",
     name: "Rode Rozen per stuk",
     price: 299,
     currency: "EUR",
