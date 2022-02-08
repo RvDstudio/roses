@@ -54,7 +54,7 @@ const Product = (props) => {
         <div className="bg-[#15162D] border border-[#162174] border-opacity-50 rounded-md shadow-lg p-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-12">
             {/* Product's image */}
-            <div className="relative w-72 h-72 sm:w-96 sm:h-96">
+            <div className="relative w-72 h-72 sm:w-96 sm:h-96 ml-12">
               <Image
                 src={props.image}
                 alt={props.name}
