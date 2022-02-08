@@ -7,7 +7,7 @@ const ProductCard = (props) => {
     <div className="flex">
       <div className=" w-full px-2">
         <div className="bg-[#15162d] shadow-xl rounded-lg overflow-hidden md:flex">
-          <div className="relative bg-cover bg-bottom h-96 w-[600px] ml-">
+          <div className="relative bg-cover bg-bottom h-96 w-[600px] ml-12">
             <Image
               src={props.image}
               alt={props.name}
