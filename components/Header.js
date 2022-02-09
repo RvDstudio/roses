@@ -22,12 +22,16 @@ const Header = () => {
         <div className="container xl:max-w-screen-xl mx-auto px-6">
           <div className="flex items-center justify-between  px-4 py-4">
             <div className="mt-2 mr-4 text-[#AC842C] cursor-pointer">
-              <Image
-                src="/img/logoRose.png"
-                alt="logo"
-                width="229"
-                height="64"
-              />
+              <Link href="/">
+                <a className="">
+                  <Image
+                    src="/img/logoRose.png"
+                    alt="logo"
+                    width="229"
+                    height="64"
+                  />
+                </a>
+              </Link>
             </div>
 
             <div className="navbar hidden md:flex">
@@ -51,7 +55,7 @@ const Header = () => {
                   Over ons
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/contact">
                 <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
                   Contact
                 </a>
@@ -62,10 +66,10 @@ const Header = () => {
               <IconButton>
                 <Link href="/cart">
                   <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C]">
-                    <div className=" relative">
-                      <p className="flex text-lg">
+                    <div className="flex relative">
+                      <p className="md:flex text-lg mr-4">
                         {formatCurrency(totalPrice)}{" "}
-                        <span className="z-20 absolute bottom-0 right-6 text-sm text-green-600 rounded-full p-2">
+                        <span className="z-20 absolute bottom-0 left-11 text-sm text-green-600 rounded-full p-2">
                           ({cartCount})
                         </span>
                       </p>
