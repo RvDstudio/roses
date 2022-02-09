@@ -19,8 +19,7 @@ const ProductCard = (props) => {
             {props.name}
           </h1>
           <p className="mb-8 text-base leading-relaxed text-left text-gray-500 ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Perferendis temporibus provident facere sequi maxime nisi!
+            {props.desc}
           </p>
           <div className="flex flex-col justify-center lg:flex-row">
             <button className="flex items-center px-6 py-2 mt-auto font-semibold text-white transition duration-500 ease-in-out transform bg-[#cfaa6c] rounded-lg hover:bg-[#ad8f5a] focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">

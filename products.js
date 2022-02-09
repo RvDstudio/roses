@@ -4,7 +4,7 @@ const products = [
     name: "Rode Rozen per stuk",
     price: 299,
     currency: "EUR",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
+    desc: "Top kwaliteit rode rozen voor een aantrekkelijke prijs. Bestel uw rode rozen bij ons en laat ze op elke plek in Nederland, Duitsland of België bezorgen.",
     image: "/products/RVD_8380.png",
     rating: {
       count: 85,
@@ -17,7 +17,7 @@ const products = [
     name: "Witte Rozen per stuk",
     price: 299,
     currency: "EUR",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio velit natus eos qui accusantium eaque nemo possimus eius beatae veniam veritatis, iste odio minus, recusandae in nobis perspiciatis modi enim!",
+    desc: "Top kwaliteit witte rozen voor een aantrekkelijke prijs. Bestel uw witte rozen bij ons en laat ze op elke plek in Nederland, Duitsland of België bezorgen.",
     image: "/products/whiterose.png",
     rating: {
       count: 85,

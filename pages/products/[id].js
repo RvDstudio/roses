@@ -65,10 +65,9 @@ const Product = (props) => {
 
             {/* Product's details */}
             <div className="flex-1 max-w-md border border-[#162174]  bg-[#1a1b36] border-opacity-50 rounded-md shadow-lg p-6 text-gray-500">
-              <h2 className="frosa text-3xl text-[#cfaa6c] font-semibold mb-4">
+              <h2 className="frosa text-3xl text-[#cfaa6c] font-semibold mb-3">
                 {props.name}
               </h2>
-              <br />
 
               <p>{props.desc}</p>
 
