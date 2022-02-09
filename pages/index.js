@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div className="bg-[#1A1B36]">
-        <div className="container xl:max-w-screen-xl mx-auto py-12 px-6">
+        <div className="container xl:max-w-screen-xl mx-auto  px-6">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-8">
             {products.map((product) => (
               <ProductCard

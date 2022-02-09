@@ -4,49 +4,40 @@ import Link from "next/link";
 
 const ProductCard = (props) => {
   return (
-    <div className="flex">
-      <div className=" w-full px-2">
-        <div className="bg-[#15162d] shadow-xl rounded-lg overflow-hidden md:flex">
-          <div className="relative bg-cover bg-bottom h-96 w-[600px] ml-12">
-            <Image
-              src={props.image}
-              alt={props.name}
-              layout="fill"
-              objectFit="contain"
-              className="bg-cover bg-bottom h-96 md:h-auto md:w-full"
-            />
-          </div>
-          <div className="flex items-center justify-center py-12 ml-5">
-            <div className="p-4 md:p-5">
-              <p className="font-medium text-[#cfaa6c] text-1xl md:text-3xl mb-3">
-                {props.name}
-              </p>
-              <p className="text-gray-600 md:text-lg mb-5">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
-              </p>
+    <section className="text-gray-700 bg-[#15162d] border border-[#202144] mt-10 rounded-xl shadow-2xl ">
+      <div className="container flex flex-col items-center px-5 py-6 mx-auto md:flex-row lg:px-20">
+        <div className="w-full lg:w-1/3 lg:max-w-lg md:w-1/2">
+          <Image
+            src={props.image}
+            alt={props.name}
+            width="600px"
+            height="600px"
+          />
+        </div>
+        <div className="flex flex-col items-start mb-16 text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 md:mb-0">
+          <h1 className="frosa mb-6 text-2xl font-normal tracking-tighter text-[#cfaa6c] md:text-5xl title-font">
+            {props.name}
+          </h1>
+          <p className="mb-8 text-base leading-relaxed text-left text-gray-500 ">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perferendis temporibus provident facere sequi maxime nisi!
+          </p>
+          <div className="flex flex-col justify-center lg:flex-row">
+            <button className="flex items-center px-6 py-2 mt-auto font-semibold text-white transition duration-500 ease-in-out transform bg-[#cfaa6c] rounded-lg hover:bg-[#ad8f5a] focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
               <Link href={`/products/${props.id}`}>
-                <a className="bg-[#cfaa6c] px-4 py-1 text-white rounded-md">
-                  Bestel nu
-                </a>
+                <a>Nu Bestellen</a>
               </Link>
-            </div>
-            <div className="p-2 md:p-5 bg-[#15162d]">
-              <div className="flex">
-                <p className="text-[#cfaa6c] mr-2">Prijs per stuk</p>
-                <p className="text-lg font-semibold text-[#cfaa6c]">
-                  {formatCurrency(props.price, props.currency)}
-                </p>
-              </div>
-              <div className="mt-3 text-gray-600 text-sm md:text-base">
-                *De beste rozen van de wereld vind je bij FastFlower
-              </div>
-            </div>
+            </button>
+            <p className="flex items-center mt-2 text-sm text-left text-blueGray-600 md:ml-6 md:mt-0">
+              <p className="text-[#cfaa6c] mr-2">Prijs per stuk</p>
+              <p className="text-lg font-semibold text-[#cfaa6c]">
+                {formatCurrency(props.price, props.currency)}
+              </p>
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
