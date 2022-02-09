@@ -15,14 +15,14 @@ const ProductCard = (props) => {
           />
         </div>
         <div className="flex flex-col items-start mb-16 text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pr-16 md:mb-0">
-          <h1 className="frosa mb-6 text-2xl font-normal tracking-tighter text-[#cfaa6c] md:text-5xl title-font">
+          <h1 className="frosa mb-6 mt-4 text-2xl font-normal tracking-tighter text-[#cfaa6c] md:text-5xl title-font">
             {props.name}
           </h1>
           <p className="mb-8 text-base leading-relaxed text-left text-gray-500 ">
             {props.desc}
           </p>
           <div className="flex flex-col justify-center lg:flex-row">
-            <button className="flex items-center px-6 py-2 mt-auto font-semibold text-white transition duration-500 ease-in-out transform bg-[#cfaa6c] rounded-lg hover:bg-[#ad8f5a] focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+            <button className="flex items-center px-6 py-2 mt-auto font-semibold mb-3 text-white transition duration-500 ease-in-out transform bg-[#cfaa6c] rounded-lg hover:bg-[#ad8f5a] focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
               <Link href={`/products/${props.id}`}>
                 <a>Nu Bestellen</a>
               </Link>

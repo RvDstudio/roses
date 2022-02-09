@@ -50,7 +50,7 @@ const Header = () => {
                   Vazen
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/AboutUs">
                 <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
                   Over ons
                 </a>
