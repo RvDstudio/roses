@@ -7,10 +7,11 @@ function Banner() {
             Welkom bij Fast Flower
           </h1>
           <p className="mb-8 text-[20px] leading-relaxed">
-            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
-            plant cold-pressed tacos poke beard tote bag. Heirloom echo park
-            mlkshk tote bag selvage hot chicken authentic tumeric truffaut
-            hexagon try-hard chambray.
+            Welkom bij Fast Flower Bloemen en planten direct van de kweker
+            geleverd, vers in huis en keer op keer topkwaliteit. Samen met onze
+            kwekers selecteren we de beste seizoensbloemen. We besparen onze
+            bloemen de omweg via de veiling en groothandel, zodat jij lang kan
+            genieten van verse bloemen!
           </p>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
