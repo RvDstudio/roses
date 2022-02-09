@@ -16,7 +16,7 @@ export default class Testimonials extends Component {
       >
         {poeple.map((e) => {
           return (
-            <div>
+            <div key={e.id}>
               <img alt="user" className="mb-4" src="/img/user.png" />
               <div className="myCarousel">
                 <h3>{e.name}</h3>

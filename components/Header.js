@@ -1,43 +1,99 @@
 import { useShoppingCart } from "@/hooks/use-shopping-cart";
 import { ShoppingCartIcon } from "@heroicons/react/solid";
-import { IconButton } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 import { formatCurrency } from "@/lib/utils";
+import MenuIcon from "@mui/icons-material/Menu";
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
+import SidebarNav from "./SidebarNav";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
   const { totalPrice, cartCount } = useShoppingCart();
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-[#162174] bg-[#15162d]">
         <div className="container xl:max-w-screen-xl mx-auto px-6">
-          <div className="flex items-center justify-between  px-4  flex-grow py-4">
-            <div className="mt-2 flex items-center mr-4 text-[#AC842C] cursor-pointer">
+          <div className="flex items-center justify-between  px-4 py-4">
+            <div className="mt-2 mr-4 text-[#AC842C] cursor-pointer">
+              <Image
+                src="/img/logoRose.png"
+                alt="logo"
+                width="229"
+                height="64"
+              />
+            </div>
+
+            <div className="navbar hidden md:flex">
               <Link href="/">
-                <img src="/img/logoRose.png" alt="" />
+                <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
+                  Bekijk onze collectie
+                </a>
+              </Link>
+              <Link href="/">
+                <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
+                  Valentijnsdag
+                </a>
+              </Link>
+              <Link href="/">
+                <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
+                  Vazen
+                </a>
+              </Link>
+              <Link href="/">
+                <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
+                  Over ons
+                </a>
+              </Link>
+              <Link href="/">
+                <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
+                  Contact
+                </a>
               </Link>
             </div>
 
-            <div className="relative z-1">
+            <div className="flex relative z-1">
               <IconButton>
                 <Link href="/cart">
                   <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C]">
-                    <div className="relative">
-                      <p className=" text-lg">
+                    <div className=" relative">
+                      <p className="flex text-lg">
                         {formatCurrency(totalPrice)}{" "}
-                        <span className="z-20 absolute bottom-0 left-6 text-sm text-green-600 rounded-full p-2">
+                        <span className="z-20 absolute bottom-0 right-6 text-sm text-green-600 rounded-full p-2">
                           ({cartCount})
                         </span>
                       </p>
-                      <ShoppingCartIcon className="w-7 h-7 flex-shrink-0" />
+                      <ShoppingCartIcon className="ml-3 w-7 h-7 flex-shrink-0" />
                     </div>
                   </a>
                 </Link>
+              </IconButton>
+              <IconButton
+                onClick={toggleDrawer}
+                className="md:hidden hover:text-[#fd0000]"
+              >
+                <MenuIcon className="h-6 w-6 text-[#cfaa6c] hover:text-[#AC842C]" />
               </IconButton>
             </div>
           </div>
         </div>
       </header>
+
+      <Drawer
+        style="#oocbfe"
+        open={isOpen}
+        size={250}
+        onClose={toggleDrawer}
+        direction="right"
+      >
+        <SidebarNav />
+      </Drawer>
     </>
   );
 };

@@ -28,10 +28,10 @@ const ProductCard = (props) => {
               </Link>
             </button>
             <p className="flex items-center mt-2 text-sm text-left text-blueGray-600 md:ml-6 md:mt-0">
-              <p className="text-[#cfaa6c] mr-2">Prijs per stuk</p>
-              <p className="text-lg font-semibold text-[#cfaa6c]">
+              <span className="text-[#cfaa6c] mr-2">Prijs per stuk</span>
+              <span className="text-lg font-semibold text-[#cfaa6c]">
                 {formatCurrency(props.price, props.currency)}
-              </p>
+              </span>
             </p>
           </div>
         </div>
