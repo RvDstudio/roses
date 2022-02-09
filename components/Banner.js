@@ -6,7 +6,7 @@ function Banner() {
           <h1 className="frosa xs:text-3xl text-5xl mb-4 font-medium text-[#cfaa6c]">
             Welkom bij Fast Flower
           </h1>
-          <p className="mb-8 text-[20px] leading-relaxed">
+          <p className="mb-8 text-[20px] text-gray-500 leading-relaxed">
             Welkom bij Fast Flower Bloemen en planten direct van de kweker
             geleverd, vers in huis en keer op keer topkwaliteit. Samen met onze
             kwekers selecteren we de beste seizoensbloemen. We besparen onze
