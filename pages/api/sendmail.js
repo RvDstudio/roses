@@ -1,36 +1,29 @@
-export default function (req, res) {
-  require("dotenv").config();
+import nodemailer from "nodemailer";
 
-  let nodemailer = require("nodemailer");
+export default async (req, res) => {
+  const { name, email, message } = req.body;
   const transporter = nodemailer.createTransport({
-    service: "Gmail",
-    port: 587,
-    tls: true,
-    secure: true,
     host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-      user: "fastflower432@gmail.com",
-      pass: process.env.mailpass,
-    },
-    tls: {
-      ciphers: "SSLv3",
-      rejectUnauthorized: false,
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASSWORD,
     },
   });
 
-  const mailData = {
-    from: "fastflower432@gmail.com",
-    to: "fastflower432@gmail.com",
-    subject: `Message From ${req.body.name}`,
-    text: req.body.message + " | Sent from: " + req.body.email,
-    html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`,
-  };
-
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
-  });
-
-  console.log(req.body);
-  res.send("success");
-}
+  try {
+    await transporter.sendMail({
+      from: email,
+      to: "example@gmail.com",
+      subject: `Contact form submission from ${name}`,
+      html: `<p>You have a contact form submission</p><br>
+        <p><strong>Email: </strong> ${email}</p><br>
+        <p><strong>Message: </strong> ${message}</p><br>
+      `,
+    });
+  } catch (error) {
+    return res.status(500).json({ error: error.message || error.toString() });
+  }
+  return res.status(200).json({ error: "" });
+};
