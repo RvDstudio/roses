@@ -22,7 +22,6 @@ export default async (req, res) => {
         <p><strong>Message: </strong> ${message}</p><br>
       `,
     });
-    res.redirect("/success"); // I MOVED THE REDIRECTING CODE HERE AND WORKED
   } catch (error) {
     return res.status(500).json({ error: error.message || error.toString() });
   }
