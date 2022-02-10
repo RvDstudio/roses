@@ -1,14 +1,14 @@
 import { useShoppingCart } from "@/hooks/use-shopping-cart";
-import { ShoppingCartIcon } from "@heroicons/react/solid";
-import IconButton from "@mui/material/IconButton";
 import { formatCurrency } from "@/lib/utils";
+import { ShoppingCartIcon } from "@heroicons/react/solid";
 import MenuIcon from "@mui/icons-material/Menu";
+import IconButton from "@mui/material/IconButton";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import SidebarNav from "./SidebarNav";
-import Link from "next/link";
-import React from "react";
-import Image from "next/image";
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -50,7 +50,7 @@ const Header = () => {
                   Vazen
                 </a>
               </Link>
-              <Link href="/AboutUs">
+              <Link href="/aboutus">
                 <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
                   Over ons
                 </a>
