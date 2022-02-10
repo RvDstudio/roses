@@ -9,7 +9,9 @@ export default function (req, res) {
       user: "fastflower432@gmail.com",
       pass: process.env.mailpass,
     },
-    secure: true,
+    tls: {
+      rejectUnauthorized: false,
+    },
   });
 
   const mailData = {
