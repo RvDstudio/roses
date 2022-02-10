@@ -2636,6 +2636,11 @@
   dependencies:
     "is-arrayish" "^0.3.1"
 
+"smtp@^0.1.4":
+  "integrity" "sha1-F3m7fmnA4Qd7cir/Q2dAjE29BFQ="
+  "resolved" "https://registry.npmjs.org/smtp/-/smtp-0.1.4.tgz"
+  "version" "0.1.4"
+
 "source-map-js@^0.6.2":
   "integrity" "sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug=="
   "resolved" "https://registry.npmjs.org/source-map-js/-/source-map-js-0.6.2.tgz"
