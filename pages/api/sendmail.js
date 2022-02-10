@@ -17,11 +17,12 @@ export default async (req, res) => {
       from: email,
       to: "fastflower432@gmail.com",
       subject: `${name} Heeft een bericht gestuurd`,
-      html: `<p>You have a contact form submission</p><br>
+      html: `<p>Je hebt een nieuw bericht gehad van Fast Flower</p><br>
         <p><strong>Email: </strong> ${email}</p><br>
         <p><strong>Message: </strong> ${message}</p><br>
       `,
     });
+    res.redirect("/success"); // I MOVED THE REDIRECTING CODE HERE AND WORKED
   } catch (error) {
     return res.status(500).json({ error: error.message || error.toString() });
   }

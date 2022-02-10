@@ -28,7 +28,7 @@ function SidebarNav() {
         </a>
 
         <a
-          href="/AboutUs"
+          href="/about-us"
           className="flex items-center py-2 px-4 rounded transition duration-200 hover:bg-[#AC842C] hover:text-white border-b border-[#162174] mb-4"
         >
           <p className="ml-3 font-medium text-[#cfaa6c]">Over ons</p>
