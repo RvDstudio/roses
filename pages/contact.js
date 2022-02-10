@@ -27,6 +27,7 @@ const Contact = () => {
       console.log("Response received");
       if (res.status === 200) {
         console.log("Response succeeded!");
+        alert("Uw bericht is verzonden.");
         setSubmitted(true);
         setName("");
         setEmail("");
@@ -43,7 +44,7 @@ const Contact = () => {
               Stuur ons een berichtje
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Heeft uw problemen met het bestellen van een mooie bos rozen?
+              Heeft uw vragen over het bestellen van een mooie bos rozen?
             </p>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
