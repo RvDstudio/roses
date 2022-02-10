@@ -3,21 +3,19 @@ export default function (req, res) {
 
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
+    service: "Gmail",
     port: 465,
-    pool: true,
+    secure: true,
     host: "smtp.gmail.com",
     auth: {
       user: "fastflower432@gmail.com",
       pass: process.env.mailpass,
     },
-    tls: {
-      rejectUnauthorized: false,
-    },
   });
 
   const mailData = {
     from: "fastflower432@gmail.com",
-    to: "rein.varkevisser@gmail.com",
+    to: "fastflower432@gmail.com",
     subject: `Message From ${req.body.name}`,
     text: req.body.message + " | Sent from: " + req.body.email,
     html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`,
