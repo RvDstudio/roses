@@ -35,17 +35,17 @@ const Header = () => {
             </div>
 
             <div className="navbar hidden md:flex">
-              <Link href="/">
+              <Link href="/collectie">
                 <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
                   Bekijk onze collectie
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/valentijnsdag">
                 <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
                   Valentijnsdag
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/vazen">
                 <a className=" space-x-1 text-[#cfaa6c] hover:text-[#AC842C] mr-4">
                   Vazen
                 </a>
