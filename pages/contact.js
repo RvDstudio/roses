@@ -34,7 +34,6 @@ const Contact = () => {
       }
     });
   };
-
   return (
     <div className="container xl:max-w-screen-xl mx-auto  px-6">
       <section className="text-[#cfaa6c] body-font relative">
