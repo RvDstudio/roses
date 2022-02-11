@@ -38,7 +38,7 @@ const AboutUs = () => {
           <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-[#162174] sm:flex-row flex-col">
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
               <h2 className="text-[#cfaa6c] text-lg title-font font-medium mb-2">
-                Brian Grimbergen
+                Monder van der Ploeg
               </h2>
               <p className="leading-relaxed text-base">
                 Blue bottle crucifix vinyl post-ironic four dollar toast vegan
@@ -77,7 +77,7 @@ const AboutUs = () => {
             </div>
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
               <h2 className="text-[#cfaa6c] text-lg title-font font-medium mb-2">
-                Brian Grimbergen
+                Dennis van werkhoven
               </h2>
               <p className="leading-relaxed text-base text-gray-500">
                 Blue bottle crucifix vinyl post-ironic four dollar toast vegan
