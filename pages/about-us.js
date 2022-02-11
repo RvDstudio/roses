@@ -62,7 +62,7 @@ const AboutUs = () => {
             <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
               <img
                 className="rounded-full"
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.6435-9/38451341_10156720837658578_6843066664234254336_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=mOXR3bBqgSMAX8pMmxA&_nc_ht=scontent-ams4-1.xx&oh=00_AT_IMh2ZR-EjT8SD1ffX6S4qXKbh9QC5tkuQyWtWqwp8yA&oe=622B10B4"
                 alt=""
               />
             </div>
